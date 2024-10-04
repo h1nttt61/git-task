@@ -1,5 +1,6 @@
 ﻿begin
   var (year, flag) := (ReadInteger(), False);
+  Assert(year > 0);
   if (year.Divs(4)) and (year mod 100 <> 0) or (year.Divs(400)) then
     flag := True;
   Println(flag);
