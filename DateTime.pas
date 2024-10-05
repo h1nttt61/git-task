@@ -12,7 +12,7 @@
   var (year1, year2) := ReadInteger2('Введите 2 года, чтобы получить сумму их дней:');
   Assert(year1 < year2);
   var (cnt, flag2) := (0, False);
-  for var i := year1 to year2 do
+  for var i := year1+1 to year2 do
   begin
     if (i.Divs(4)) and (i mod 100 <> 0) or (i.Divs(400)) then
       flag2 := True;
@@ -39,5 +39,5 @@
     Print(2);  
   Println('---------------------------------------------------------');
   var hours := ReadInteger();
-  Print(hours*3600)
+  Print(hours*3600);
 end.
