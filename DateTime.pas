@@ -38,4 +38,6 @@
   else
     Print(2);  
   Println('---------------------------------------------------------');
+  var hours := ReadInteger();
+  Print(hours*3600)
 end.
